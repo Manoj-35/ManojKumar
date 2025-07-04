@@ -1,0 +1,20 @@
+import java.util.*;
+class Main{
+    public static void main(String[]args){
+        Scanner obj=new Scanner(System.in);
+        System.out.print("Enter the Character:");
+        char ch1=obj.next().charAt(0);
+        if(Character.isLowerCase(ch1)){
+            char upper=Character.toUpperCase(ch1);
+            System.out.print("output:"+upper);
+        }
+        else if(Character.isUpperCase(ch1)){
+            char lower=Character.toLowerCase(ch1);
+            System.out.print("output:"+lower);
+        }
+        else{
+            System.out.println("It is not a Alphabet");
+        }
+    }
+}
+        
